@@ -1,5 +1,6 @@
 use std::fmt;
 
+#[derive(Debug, Clone, Copy, PartialEq)]
 pub enum MyEnum {
     VarA,
     VarB,
@@ -20,6 +21,7 @@ impl fmt::Display for MyEnum {
     }
 }
 
+#[derive(Debug, Clone, Copy, PartialEq)]
 pub struct MyStruct {
     a: u32,
     b: u32,

@@ -3,6 +3,7 @@ mod derived_display;
 
 fn main() {
     no_derive();
+    derive();
 }
 
 fn no_derive() {
@@ -23,12 +24,12 @@ fn derive() {
     // https://crates.io/crates/parse-display-derive
     println!("Derived Display method");
 
-    let s = derived_display::MyStruct::new(10, 20);
-    println!("{}", s);
-
     let a = derived_display::MyEnum::VarA;
     let b = derived_display::MyEnum::VarB;
     println!("{}", a);
     println!("{}", b);
+
+    let s = derived_display::MyStruct::new(10, 20);
+    println!("{}", s);
     println!();
 }
